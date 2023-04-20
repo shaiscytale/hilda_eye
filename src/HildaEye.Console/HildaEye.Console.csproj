@@ -1,0 +1,297 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="haarcascade_frontalface_default.xml" />
+    <None Remove="training\human_0\100_0023.JPG" />
+    <None Remove="training\human_0\100_0025.JPG" />
+    <None Remove="training\human_0\100_0027.JPG" />
+    <None Remove="training\human_0\100_0029.JPG" />
+    <None Remove="training\human_0\100_0030.JPG" />
+    <None Remove="training\human_0\100_0031.JPG" />
+    <None Remove="training\human_0\100_0034.JPG" />
+    <None Remove="training\human_0\100_0200.JPG" />
+    <None Remove="training\human_0\100_0201.JPG" />
+    <None Remove="training\human_0\100_0202.JPG" />
+    <None Remove="training\human_0\100_0203.JPG" />
+    <None Remove="training\human_0\100_0204.JPG" />
+    <None Remove="training\human_0\100_0205.JPG" />
+    <None Remove="training\human_0\100_0206.JPG" />
+    <None Remove="training\human_0\100_0207.JPG" />
+    <None Remove="training\human_0\100_0208.JPG" />
+    <None Remove="training\human_0\100_0209.JPG" />
+    <None Remove="training\human_0\100_0210.JPG" />
+    <None Remove="training\human_0\100_0211.JPG" />
+    <None Remove="training\human_0\100_0355.JPG" />
+    <None Remove="training\human_0\100_0356.JPG" />
+    <None Remove="training\human_0\100_0357.JPG" />
+    <None Remove="training\human_0\100_0358.JPG" />
+    <None Remove="training\human_0\100_0359.JPG" />
+    <None Remove="training\human_0\100_0360.JPG" />
+    <None Remove="training\human_0\100_0361.JPG" />
+    <None Remove="training\human_0\100_0362.JPG" />
+    <None Remove="training\human_0\100_0363.JPG" />
+    <None Remove="training\human_0\100_0364.JPG" />
+    <None Remove="training\human_0\IMG_20200912_122801.jpg" />
+    <None Remove="training\human_0\IMG_20210621_182147.jpg" />
+    <None Remove="training\human_0\IMG_20210625_181502.jpg" />
+    <None Remove="training\human_0\IMG_20210625_181506.jpg" />
+    <None Remove="training\human_0\WhatsApp Image 2023-04-05 at 07.21.40.jpeg" />
+    <None Remove="training\human_0\WhatsApp Image 2023-04-05 at 18.46.11.jpeg" />
+    <None Remove="training\human_0\WhatsApp Image 2023-04-08 at 11.13.39.jpeg" />
+    <None Remove="training\human_1\49271112.jpg" />
+    <None Remove="training\human_1\IMG_20201219_012848.jpg" />
+    <None Remove="training\human_1\IMG_20210726_185220.jpg" />
+    <None Remove="training\human_1\WhatsApp Image 2023-04-15 at 18.32.14.jpeg" />
+    <None Remove="training\human_1\WhatsApp Image 2023-04-20 at 21.22.06.jpeg" />
+    <None Remove="training\human_1\WhatsApp Image 2023-04-20 at 21.22.12.jpeg" />
+    <None Remove="training\human_1\WhatsApp Image 2023-04-20 at 21.22.17.jpeg" />
+    <None Remove="training\human_1\WhatsApp Image 2023-04-20 at 21.22.23.jpeg" />
+    <None Remove="training\human_1\WhatsApp Image 2023-04-20 at 21.22.31.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.06.59 %281%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.06.59.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 %281%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 %282%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 %283%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 %284%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 %285%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 %286%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 %287%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.01.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.02 %281%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.02 %282%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.02.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 %281%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 %282%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 %283%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 %284%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 %285%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 %286%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 %287%29.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03.jpeg" />
+    <None Remove="training\human_2\WhatsApp Image 2023-04-20 at 21.07.04.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="haarcascade_frontalface_default.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0023.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0025.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0027.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0029.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0030.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0031.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0034.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0200.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0201.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0202.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0203.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0204.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0205.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0206.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0207.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0208.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0209.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0210.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0211.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0355.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0356.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0357.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0358.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0359.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0360.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0361.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0362.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0363.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\100_0364.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\IMG_20200912_122801.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\IMG_20210621_182147.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\IMG_20210625_181502.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\IMG_20210625_181506.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\WhatsApp Image 2023-04-05 at 07.21.40.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\WhatsApp Image 2023-04-05 at 18.46.11.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_0\WhatsApp Image 2023-04-08 at 11.13.39.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\49271112.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\IMG_20201219_012848.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\IMG_20210726_185220.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\WhatsApp Image 2023-04-15 at 18.32.14.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\WhatsApp Image 2023-04-20 at 21.22.06.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\WhatsApp Image 2023-04-20 at 21.22.12.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\WhatsApp Image 2023-04-20 at 21.22.17.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\WhatsApp Image 2023-04-20 at 21.22.23.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_1\WhatsApp Image 2023-04-20 at 21.22.31.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.06.59 (1).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.06.59.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 (1).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 (2).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 (3).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 (4).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 (5).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 (6).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00 (7).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.00.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.01.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.02 (1).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.02 (2).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.02.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 (1).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 (2).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 (3).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 (4).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 (5).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 (6).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03 (7).jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.03.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="training\human_2\WhatsApp Image 2023-04-20 at 21.07.04.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4" Version="4.7.0.20230115" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.7.0.20230115" />
+  </ItemGroup>
+
+</Project>
