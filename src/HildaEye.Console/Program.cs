@@ -9,12 +9,11 @@ var pictures = new List<Mat>();
 var humanIndexes = new List<int>();
 var firstnames = new List<string>
 {
-    "HUMAN_1",
-    "HUMAN_2",
-    "HUMAN_3"
+    "ulysse",
+    "math"
 };
 
-for (var i = 0; i <= 2; i++)
+for (var i = 0; i <= 1; i++)
 {
     var folderPath = $"training/human_{i}";
     var files = Directory.GetFiles(folderPath);
